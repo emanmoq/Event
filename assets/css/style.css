@@ -365,10 +365,10 @@ transition: .5s all;
     padding:50px 0
 }
  .owl-nav .owl-next span{
-    right:-10%;
+    left:-10%;
 }
  .owl-nav .owl-prev span{
-    left:-10%;
+    right:-10%;
 }
 /*---------------Our Speakers Start----------*/
 #OurSpeakers{

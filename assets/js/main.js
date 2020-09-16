@@ -31,13 +31,12 @@ jQuery(function ($) {
     
     });
     $(".up").on("click", function () { $("html, body").animate({ scrollTop: 0 }, "slow"); return false; });
-
-    setTimeout(function () {
         $('.EventCarusel').owlCarousel({
           autoplay: true,
           loop: false,
           margin: 15,
           nav:true,
+          rtl:true,
           responsive: {
             0: {
               items: 1,
@@ -58,6 +57,7 @@ jQuery(function ($) {
             loop: false,
             margin: 15,
             nav:true,
+            rtl:true,
             responsive: {
               0: {
                 items: 1,
@@ -81,6 +81,7 @@ jQuery(function ($) {
             nav:true,
             items:1,
             dots:true,
+            rtl:true,
             dotsContainer:".Images",
             responsive: {
               0: {
@@ -101,6 +102,7 @@ jQuery(function ($) {
             loop: false,
             margin: 15,
             nav:true,
+            rtl:true,
             responsive: {
               0: {
                 items:1,
@@ -124,6 +126,7 @@ jQuery(function ($) {
             loop: false,
             margin: 15,
             nav:false,
+            rtl:true,
             responsive: {
               0: {
                 items:1,
@@ -144,7 +147,7 @@ jQuery(function ($) {
         
       
 
-      }, 1000);
+
       function onScroll(event){
         var scrollPosition = $(document).scrollTop();
       $('.nav-link[href^="#"').each(function () {
