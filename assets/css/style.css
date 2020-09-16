@@ -734,7 +734,7 @@ color:white;
 .up{
     display: inline;
     position: fixed;
-    bottom: 44%;
+    bottom: 7%;
     right: 10%;
     text-decoration: none;
     text-align: center;
@@ -745,8 +745,15 @@ color:white;
 }
 .up:hover{
     text-decoration: none;
+
+}
+.up:hover i{
+    color:white;
+    background-color: #00438B;
+    transition: all .5s;
 }
 .up i{
+    transition: all .5s;
     display: block;
     font-size: 22px;
     width: 40px;
@@ -790,8 +797,12 @@ color:white;
         .navbar{
             padding:.5rem 1rem;
         }
+        .up{
+            display: none;
+        }
         .heroContainer{
             background-image: none;
+            padding-bottom:50px;
         }
         .imgContainer{
             display: block;
@@ -836,6 +847,9 @@ color:white;
         margin-bottom:20px;
         text-align: center;
     }
+    #aboutus{
+        padding:20px;
+    }
     /*---------------Our Speakers Start----------*/
 #OurSpeakers{
     padding-bottom: 20px;
@@ -874,6 +888,59 @@ color:white;
           opacity: 1;
         }
       }
+      @media(max-width:1100px){
+       
+        .heroText{
+            margin:20px;
+        }
+        .MainTitle{
+font-size:34px;
+        }
+
+        .owl-nav .owl-next span{
+left:45px;
+
+        }
+        .owl-nav .owl-prev span{
+            left:10px
+        }
+        .owl-nav{
+position: relative;
+        }
+        #pricing .card{
+            margin-bottom: 10px;
+        }
+        #Pricing {
+            padding: 10px 0;
+            background-size: cover;
+      }
+      #Testimonials{
+          padding:20px;
+      }
+      #TestimonialsCarusel {
+          margin-top:20px;
+      }
+      .SponserSlider{
+          width:102%;
+      }
+      .Contactform {
+        background-color: white;
+        padding: 15px 17px;}
+        .heroContainer{
+            padding-bottom:20px;
+        }
+        .title{
+            margin-bottom:5px;
+        }
+        .TestimonialsCarusel .owl-stage{
+            padding:0;
+        }
+        .up{
+            bottom: 23%;
+            right: 3%;
+        }
+    }
+
       /*-------------------------------------------------------------*/
    @media(min-width:1800px){
    /*----- Hero----*/
