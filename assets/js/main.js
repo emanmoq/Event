@@ -1,5 +1,7 @@
 jQuery(function ($) {
 
+        
+
     $(window).scroll(function () {
       
         scrollTop = $(window).scrollTop();
@@ -72,22 +74,30 @@ jQuery(function ($) {
          
             }
           });
-          $('.TestimonialsCarusel').owlCarousel({
+          owl= $('.TestimonialsCarusel').owlCarousel({
             autoplay: true,
             loop: false,
             margin: 15,
             nav:true,
             items:1,
+            dots:true,
+            dotsContainer:".Images",
             responsive: {
               0: {
-             
                 nav:false,
       
               },
+              1000:{
+                  nav:true,
+              }
          
             }
           });
+          $('.Images').on('click', 'li', function(e) {
+            owl.trigger('to.owl.carousel', [$(this).index(), 300]);
+          });
 
       }, 1000);
+
 });
 
