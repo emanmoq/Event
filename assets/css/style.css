@@ -337,6 +337,10 @@ margin:auto;
     line-height: 11px;
     top:50%;
 }
+.owl-nav .owl-next:hover span,.owl-nav .owl-prev:hover span{
+    border:1px solid #00438B;
+    color:#00438B
+}
 .owl-stage-outer { 
     overflow: visible;
     }
@@ -357,7 +361,31 @@ margin:auto;
  .owl-nav .owl-prev span{
     left:-10%;
 }
-
+/*---------------Our Speakers Start----------*/
+#OurSpeakers{
+    padding-bottom: 100px;
+}
+/*---------------Our Speakers End----------*/
+/*---------------Pricing Start----------*/
+#Pricing{
+    background-image: url("../images/pricing.png");
+    padding:100px 0;
+    position: relative;
+    background-repeat:no-repeat;
+    width:100%;
+}
+#pricing:before{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    background:rgba(0, 67, 139, .2);
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    
+}
+/*---------------Pricing End--------------*/
 /*----------------.Testimonials -------------*/
 #Testimonials{
     background-color: #EAEAEA;
@@ -629,11 +657,22 @@ color:white;
         margin-bottom:20px;
         text-align: center;
     }
+    /*---------------Our Speakers Start----------*/
+#OurSpeakers{
+    padding-bottom: 20px;
+}
+/*---------------Our Speakers End----------*/
+/*---------------Pricing Start----------*/
+#Pricing{
+    padding:20px 0;
+}
+/*---------------Pricing End--------------*/
     /*-----------ContactUs --------*/
     .Contactform{
         margin-top:20px;
         padding:20px;
     }
+
     /*-----------Footer ----------*/
     .copyRights{
         text-align: center;
