@@ -297,6 +297,15 @@ overflow: hidden;
 .sliderItem.card .cardTopSection .card-img-top{
 width:85%;
 margin:auto;
+transition: .5s all;
+}
+.sliderItem.card:hover .card-img-top{
+transform: scale(1.1);
+transition: .5s all;
+}
+.sliderItem.card:hover  .card-body  .card-Title{
+    color:#00438B;
+    transition: all .5s;
 }
 .sliderItem.card  .card-body{
     height:22%;
@@ -347,13 +356,13 @@ margin:auto;
     
  .owl-item {
        opacity: 0;
-       transition: opacity 500ms;
+       transition: opacity .2s;
     }
  .owl-item.active {
       opacity: 1;
     }
 .owl-stage{
-    padding:45px 0
+    padding:50px 0
 }
  .owl-nav .owl-next span{
     right:-10%;

@@ -93,6 +93,31 @@ jQuery(function ($) {
          
             }
           });
+          $('.OurSpeakersCar').owlCarousel({
+            autoplay: true,
+            loop: false,
+            margin: 15,
+            nav:true,
+            dotsContainer:".Images",
+            responsive: {
+              0: {
+                items:1,
+                nav:false,
+      
+              },
+              600:{
+                items:2,
+
+                nav:true,
+              },
+              1000:{
+                items:4,
+                  nav:true,
+              }
+         
+            }
+          });
+        
           $('.Images').on('click', 'li', function(e) {
             owl.trigger('to.owl.carousel', [$(this).index(), 300]);
           });
