@@ -375,24 +375,24 @@ transition: .5s all;
     padding-bottom: 100px;
 }
 .OurSpeakersCar{
-    margin-top:70px;
+    margin-top:50px;
 }
 .OurSpeakersCarItem{
 width:100%;
 background: #CCD9E8;
 border-radius: 15px;
-overflow: hidden;
-text-align: center;
-
+height: 400px;
+    overflow: hidden;
+    text-align: center;
+    transition: all .5s;;
 }
 .ourSpeakerImg{
     border-radius: 15px;
     overflow: hidden;
-    height:80%;
+   height:75%;
+   transition: all .5s;;
 }
-.ourSpeakerImg img{
-    height:100%;
-}
+
 .ourSpeakerDesk{
 padding:25px 0;
 }
@@ -404,6 +404,24 @@ padding:25px 0;
     color:#75797C;
     font-size:14px;
 }
+.ourSpeakerImg img{
+    height:100%;
+}
+.OurSpeakersCarItem:hover{
+    background-color:#00438B;
+    transition: all .5s;;
+}
+.OurSpeakersCarItem:hover .ourSpeakerImg{
+    height:60%;
+    transition: all .5s;
+}
+.OurSpeakersCarItem:hover .ourSpeakerDesk p,.OurSpeakersCarItem:hover .ourSpeakerDesk h3 {
+    color:white;
+}
+.OurSpeakersCarItem .footerSocial{
+    margin-top:20px;
+}
+
 /*---------------Our Speakers End----------*/
 /*---------------Pricing Start----------*/
 #Pricing{
@@ -506,7 +524,7 @@ font-family:sans-serif
 padding:80px 0 90px;
 }
 .BlogCar{
-    margin-top:70px;
+    margin-top:50px;
 }
 .BlogCarItem{
     text-align: left;;
@@ -528,19 +546,25 @@ padding:80px 0 90px;
     border:1px solid transparent;
 }
 .BlogCarItemDesc{
-
+margin-top:25px;
+max-width: 95%;;
 }
 .BlogCarItemDesc h3 a{
-
+    color:#00438B;
+    font-size:28px;
+    font-weight: bold;
+    margin-bottom:10px;
 }
 .BlogCarItemDesc p{
-
+    color:#121212;
+    font-size: 14px;
+    margin-bottom:10px;
 }
-.BlogCarItemDesc .blogFooter{
 
-}
-..BlogCarItemDesc .blogFooter span{
-
+.BlogCarItemDesc .blogFooter span{
+    color:#6D8285;
+    font-size:14px;;
+    margin-right:50px;
 }
 /*---------------- Blog End ------------*/
 /*----------------.Testimonials -------------*/
