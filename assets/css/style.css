@@ -34,19 +34,21 @@ body{
 }
 .imgContainer{
     position: absolute;
-    width:63%;
+    width:100%;
     height:500px;
     background-repeat: no-repeat;
     right:0;
     top:0;
     z-index: 0;
+    display: none;
 }
-.item1,.item2,.item3,.item4,.item5,.item6{
-    position: absolute;
-}
+
 .heroContainer{
-    position: absolute;
-    width:100%
+    background-image: url("../images/bigBackground.png");
+    background-repeat: no-repeat;
+    width:100%;
+    background-size: contain;
+
 }
 .item2{
     width:4.5%;
@@ -236,6 +238,7 @@ font-family:"Lato-Medium";
     font-size:30px;
     margin-bottom:28px;
     font-weight: 700;
+    text-align: center;
 }
 .sectionDetails{
     font-size:18px;
@@ -264,7 +267,7 @@ font-family:"Lato-Medium";
     position: relative;
 }
 #LatestEvents{
-padding:80px;
+padding:80px 0;;
 }
 .sliderItem.card{
 width:100%;
@@ -274,7 +277,7 @@ overflow: hidden;
 }
 .sliderItem.card .cardTopSection{
     background: #CCD9E8 0% 0% no-repeat padding-box;
-    height:88%;
+    height:300px;
     padding:55px;
     position: relative;
 }
@@ -316,15 +319,15 @@ margin:auto;
     color:#75797C;
     font-size:16px;
 }
-.EventCarusel .owl-nav{
+ .owl-nav{
     position: absolute;
     width:100%;
     top:50%;
 }
-.EventCarusel.owl-carousel .owl-nav button.owl-next, .EventCarusel.owl-carousel .owl-nav button.owl-prev{
+ .owl-nav button.owl-next,  .owl-nav button.owl-prev{
 
 }
-.EventCarusel.owl-carousel .owl-nav .owl-next span, .EventCarusel.owl-carousel .owl-nav .owl-prev span{
+.owl-nav .owl-next span,.owl-nav .owl-prev span{
     font-size:30px;
     position: absolute;
     width:20px;
@@ -334,26 +337,108 @@ margin:auto;
     line-height: 11px;
     top:50%;
 }
-.EventCarusel.owl-carousel .owl-stage-outer { 
+.owl-stage-outer { 
     overflow: visible;
     }
     
-    .EventCarusel.owl-carousel  .owl-item {
+ .owl-item {
        opacity: 0;
        transition: opacity 500ms;
     }
-    .EventCarusel.owl-carousel .owl-item.active {
+ .owl-item.active {
       opacity: 1;
     }
-.EventCarusel.owl-carousel .owl-stage{
+.owl-stage{
     padding:45px 0
 }
-.EventCarusel.owl-carousel .owl-nav .owl-next span{
+ .owl-nav .owl-next span{
     right:-10%;
 }
-.EventCarusel.owl-carousel .owl-nav .owl-prev span{
+ .owl-nav .owl-prev span{
     left:-10%;
 }
+
+/*----------------.Testimonials -------------*/
+#Testimonials{
+    background-color: #EAEAEA;
+    padding:80px 0 90px;
+}
+.TestimonialsItem p{
+    color: #121212;
+    text-align: center;
+    font-size: 14px;
+}
+.TestimonialsCarusel{
+    margin-top: 50px;
+}
+/*----------------Testimonials End-----------*/
+
+/*------------------Sponser start -----------*/
+#Sponser{
+    padding-top:90px;
+    padding-bottom:118px;
+
+}
+.SponserSliderItem{
+    height:150px;
+    overflow:hidden;
+    border: 1px solid #121212;
+border-radius: 15px;
+padding:20px;
+
+
+}
+.SponserSliderImg{
+    width:107px;
+    height:107px;
+    margin:auto;
+    vertical-align: middle;
+}
+/*------------------Sponser End -----------*/
+/*--------------------Contact Us-----------------*/
+#contactUs .title{
+    margin-bottom:50px;
+}
+#contactUs{
+    background-color: #EAEAEA;
+    padding:90px 0;
+}
+.Contactform{
+    background-color: white;
+    padding:70px 50px;
+    border-radius: 15px;
+}
+.form-group{
+    width:100%;
+    margin-bottom:30px;
+}
+.form-control{
+    width:100%;
+    height:60px;
+    border: 1px solid #707070;
+border-radius: 10px;
+padding-right: 30px;
+}
+.form-control::placeholder{
+font-size:14px;
+color: #6D8285;
+
+}
+.submitBtn{
+    width:100%;
+    background-color: #00438B;
+    height:60px;
+    border-radius: 10px;
+    color:white;
+    margin-top:20px;
+   
+}
+
+textarea{
+    width:100%;
+    height:113px;
+}
+/*-------------------End Contact Us---------------*/
 /*----------------------Footer -----------------*/
 footer{
     background-color:#00438B;
@@ -459,9 +544,11 @@ color:white;
         .navbar{
             padding:.5rem 1rem;
         }
+        .heroContainer{
+            background-image: none;
+        }
         .imgContainer{
-            width:100%;
-            height:500px;
+            display: block;
         }
         .imgContainer img{
             height:100%;
@@ -489,10 +576,31 @@ color:white;
        .HeroImg{
         margin-top: 20px;
     }
+    /*-------Events----*/
+    #LatestEvents{
+        padding:20px 0
+    }
+    .sliderItem.card .cardTopSection{
+        padding: 40px 10px;
+        height:350px;
+    }
     /*-------about us ------*/
     .title{
         font-size:24px;
         margin-bottom:20px;
+        text-align: center;
+    }
+    /*-----------ContactUs --------*/
+    .Contactform{
+        margin-top:20px;
+        padding:20px;
+    }
+    /*-----------Footer ----------*/
+    .copyRights{
+        text-align: center;
+    }
+    .copyRightLinks,.copyRightsText{
+        float:none;
     }
    }
       /*------------------Large Screens -----------------*/
