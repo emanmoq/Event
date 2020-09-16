@@ -374,6 +374,36 @@ transition: .5s all;
 #OurSpeakers{
     padding-bottom: 100px;
 }
+.OurSpeakersCar{
+    margin-top:70px;
+}
+.OurSpeakersCarItem{
+width:100%;
+background: #CCD9E8;
+border-radius: 15px;
+overflow: hidden;
+text-align: center;
+
+}
+.ourSpeakerImg{
+    border-radius: 15px;
+    overflow: hidden;
+    height:80%;
+}
+.ourSpeakerImg img{
+    height:100%;
+}
+.ourSpeakerDesk{
+padding:25px 0;
+}
+.ourSpeakerDesk h3{
+    color:#121212;
+    font-size:20px;
+}
+.ourSpeakerDesk p{
+    color:#75797C;
+    font-size:14px;
+}
 /*---------------Our Speakers End----------*/
 /*---------------Pricing Start----------*/
 #Pricing{
@@ -386,14 +416,90 @@ transition: .5s all;
 #pricing:before{
     content: "";
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     background:rgba(0, 67, 139, .2);
     left:0;
     top:0;
     right:0;
     bottom:0;
-    
 }
+#pricing .card {
+    border: none;
+    border-radius: 15px;
+    transition: all 0.2s;
+    background-color:white;
+    padding:50px 20px;
+  }  
+  #pricing .card.BluePrice{
+      background-color: #00438B;
+  }
+  #pricing .card-body{
+      padding:0;
+  }
+  #pricing .card-title {
+    margin-bottom:28px;
+    font-size:30px;
+    color:#121212;
+    font-family:"Lato-Medium";
+  }
+  #pricing  .card.BluePrice .card-title, #pricing  .card.BluePrice .card-price,#pricing   .card.BluePrice ul li   {
+      color:white;
+  }
+  #pricing .card-price {
+    font-size:30px;
+    color:#121212;
+    margin-bottom:18px;
+  }  
+#pricing ul li {
+    margin-bottom: 20px;
+    font-size:15px;
+    color:#121212;
+    display: inline-block;
+  }
+  #pricing ul li i{
+      margin-right:7px;
+  }
+  #pricing .card.BluePrice .btn{
+    background-color:white;
+   color:#00438B;
+  }
+  #pricing .card.BluePrice .btn:hover{
+  color:white;
+  background-color:#00438B;
+  transition: all .5s;;
+  border:1px solid #fff
+  }
+  #pricing .btn {
+    border-radius: 10px;
+    padding: 14px;
+    transition: all 0.2s;
+    text-align: center;
+    color:white;
+    font-size:16px;
+    background-color:#00438B;
+    margin:auto;
+    margin-top:50px;
+    width:150px;
+    transition: all .5s;;
+    opacity: .7;
+  }
+#pricing .btn:hover{
+background-color: transparent;
+border:1px solid #00438B;
+color:#00438B;
+transition: all .5s;;
+}
+#pricing  .lni-checkmark{
+color:#23E236;
+font-size:13px;
+text-align: center;
+  }
+#pricing .times{
+color:#FF0E0E;
+font-size:13px;
+text-align: center;
+font-family:sans-serif
+  }
 /*---------------Pricing End--------------*/
 /*----------------.Testimonials -------------*/
 #Testimonials{
@@ -675,6 +781,9 @@ color:white;
 #Pricing{
     padding:20px 0;
 }
+#pricing .card {
+    margin-bottom:20px;
+}
 /*---------------Pricing End--------------*/
     /*-----------ContactUs --------*/
     .Contactform{
@@ -691,6 +800,17 @@ color:white;
     }
    }
       /*------------------Large Screens -----------------*/
+      @media (min-width: 992px) {
+        #pricing .card:hover {
+          margin-top: -.25rem;
+          margin-bottom: .25rem;
+          box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+        }
+        #pricing .card:hover .btn {
+          opacity: 1;
+        }
+      }
+      /*-------------------------------------------------------------*/
    @media(min-width:1800px){
    /*----- Hero----*/
     .heroText{

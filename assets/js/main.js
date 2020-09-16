@@ -98,7 +98,6 @@ jQuery(function ($) {
             loop: false,
             margin: 15,
             nav:true,
-            dotsContainer:".Images",
             responsive: {
               0: {
                 items:1,
