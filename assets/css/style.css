@@ -42,25 +42,24 @@ body{
     z-index: 0;
     display: none;
 }
-
+.item1,.item2{
+    width: 150px;
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    z-index: 5555;
+}
+.item2{
+    left:0;
+    bottom:0;
+}
 .heroContainer{
     background-image: url("../images/bigBackground.png");
     background-repeat: no-repeat;
     width:100%;
     background-size: contain;
-
-}
-.item2{
-    width:4.5%;
-    left:202px;
-    top:500px;
-    height:77px;
-}
-.item1{
-    width:22%;
-    left:0;
-    top:170px;
-    height:400px;
+    padding-bottom: 333px;
+    position: relative;
 }
 
 /*******Header ****************/
@@ -143,9 +142,9 @@ button.navbar-toggler i:nth-child(2) {
     }
 .scrollNav {
         top: 0 !important;
-        z-index: 555;
+        z-index: 99999999999999999999999;
         animation-duration: .5s;
-        background: #EAEAEA;
+        background:#CAD7E6;
         position: fixed !important;
         box-shadow: rgba(0, 0, 0, 0.1) 2px 3px 20px 3px;
         transition: 1s all;
@@ -156,6 +155,7 @@ button.navbar-toggler i:nth-child(2) {
         transition: all .5s;;
         animation:sticky;
     }
+
 /****************Animation of mobile Toggler****************/
 @-webkit-keyframes nav1 {
     50% {
@@ -202,7 +202,6 @@ button.navbar-toggler i:nth-child(2) {
  #heroSection{
      background-color: transparent;
      z-index: 11;
-     height:1600px;
      position: relative;
  }
  .heroText{
@@ -337,14 +336,15 @@ transition: .5s all;
 
 }
 .owl-nav .owl-next span,.owl-nav .owl-prev span{
-    font-size:30px;
+    font-size: 33px;
     position: absolute;
-    width:20px;
-    height:20px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
-    border:1px solid #000;
-    line-height: 11px;
-    top:50%;
+    border: 1px solid #000;
+    line-height: 17px;
+    top: 50%;
+
 }
 .owl-nav .owl-next:hover span,.owl-nav .owl-prev:hover span{
     border:1px solid #00438B;
@@ -501,6 +501,48 @@ text-align: center;
 font-family:sans-serif
   }
 /*---------------Pricing End--------------*/
+/*---------------- Blog Start ------------*/
+#Blog{
+padding:80px 0 90px;
+}
+.BlogCar{
+    margin-top:70px;
+}
+.BlogCarItem{
+    text-align: left;;
+}
+.BlogItemImg{
+    width:100%;
+    border:1px solid #121212;
+    border-radius: 15px;;
+    padding:17px;
+    height:200px;
+}
+.BlogCarIteminner{
+    width:200px;
+    margin:auto;
+    height:100%;
+}
+.BlogCarItem:hover .BlogItemImg{
+    box-shadow: 0px 3px 26px #0000001A;
+    border:1px solid transparent;
+}
+.BlogCarItemDesc{
+
+}
+.BlogCarItemDesc h3 a{
+
+}
+.BlogCarItemDesc p{
+
+}
+.BlogCarItemDesc .blogFooter{
+
+}
+..BlogCarItemDesc .blogFooter span{
+
+}
+/*---------------- Blog End ------------*/
 /*----------------.Testimonials -------------*/
 #Testimonials{
     background-color: #EAEAEA;
@@ -562,13 +604,11 @@ font-family:sans-serif
 
 }
 .SponserSliderItem{
-    height:150px;
     overflow:hidden;
     border: 1px solid #121212;
 border-radius: 15px;
 padding:20px;
-
-
+position: relative;
 }
 .SponserSliderImg{
     width:107px;

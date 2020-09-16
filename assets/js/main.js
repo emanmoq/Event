@@ -93,6 +93,9 @@ jQuery(function ($) {
          
             }
           });
+          $('.Images').on('click', 'li', function(e) {
+            owl.trigger('to.owl.carousel', [$(this).index(), 300]);
+          });
           $('.OurSpeakersCar').owlCarousel({
             autoplay: true,
             loop: false,
@@ -116,10 +119,30 @@ jQuery(function ($) {
          
             }
           });
-        
-          $('.Images').on('click', 'li', function(e) {
-            owl.trigger('to.owl.carousel', [$(this).index(), 300]);
+          $('.BlogCar').owlCarousel({
+            autoplay: true,
+            loop: false,
+            margin: 15,
+            nav:false,
+            responsive: {
+              0: {
+                items:1,
+             
+      
+              },
+              600:{
+                items:2,
+
+              },
+              1000:{
+                items:3,
+               
+              }
+         
+            }
           });
+        
+      
 
       }, 1000);
 
