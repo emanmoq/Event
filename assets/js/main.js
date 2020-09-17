@@ -39,7 +39,7 @@ jQuery(function ($) {
           responsive: {
             0: {
               items: 1,
-              nav:false,
+              nav:true,
              margin:0
     
             },
@@ -60,7 +60,7 @@ jQuery(function ($) {
             responsive: {
               0: {
                 items: 1,
-                nav:false,
+                nav:true,
       
               },
               600: {
@@ -83,7 +83,7 @@ jQuery(function ($) {
             dotsContainer:".Images",
             responsive: {
               0: {
-                nav:false,
+                nav:true,
       
               },
               1000:{
@@ -103,8 +103,8 @@ jQuery(function ($) {
             responsive: {
               0: {
                 items:1,
-                nav:false,
-      
+                nav:true,
+
               },
               600:{
                 items:2,
@@ -126,8 +126,7 @@ jQuery(function ($) {
             responsive: {
               0: {
                 items:1,
-             
-      
+             nav:true,
               },
               600:{
                 items:2,
