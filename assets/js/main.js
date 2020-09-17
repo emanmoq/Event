@@ -36,7 +36,6 @@ jQuery(function ($) {
           loop: false,
           margin: 15,
           nav:true,
-          rtl:true,
           responsive: {
             0: {
               items: 1,
@@ -57,7 +56,7 @@ jQuery(function ($) {
             loop: false,
             margin: 15,
             nav:true,
-            rtl:true,
+       
             responsive: {
               0: {
                 items: 1,
@@ -76,12 +75,11 @@ jQuery(function ($) {
           });
           owl= $('.TestimonialsCarusel').owlCarousel({
             autoplay: true,
-            loop: false,
+            loop: true,
             margin: 15,
             nav:true,
             items:1,
             dots:true,
-            rtl:true,
             dotsContainer:".Images",
             responsive: {
               0: {
@@ -99,10 +97,9 @@ jQuery(function ($) {
           });
           $('.OurSpeakersCar').owlCarousel({
             autoplay: true,
-            loop: false,
+            loop: true,
             margin: 15,
             nav:true,
-            rtl:true,
             responsive: {
               0: {
                 items:1,
@@ -123,10 +120,9 @@ jQuery(function ($) {
           });
           $('.BlogCar').owlCarousel({
             autoplay: true,
-            loop: false,
+            loop: true,
             margin: 15,
             nav:false,
-            rtl:true,
             responsive: {
               0: {
                 items:1,
@@ -145,9 +141,6 @@ jQuery(function ($) {
             }
           });
         
-      
-
-
       function onScroll(event){
         var scrollPosition = $(document).scrollTop();
       $('.nav-link[href^="#"').each(function () {

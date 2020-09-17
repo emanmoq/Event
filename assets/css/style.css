@@ -365,10 +365,10 @@ transition: .5s all;
     padding:50px 0
 }
  .owl-nav .owl-next span{
-    left:-10%;
+    right:-10%;
 }
  .owl-nav .owl-prev span{
-    right:-10%;
+    left:-10%;
 }
 /*---------------Our Speakers Start----------*/
 #OurSpeakers{
@@ -376,6 +376,9 @@ transition: .5s all;
 }
 .OurSpeakersCar{
     margin-top:50px;
+}
+.owl-carousel{
+    float: left;
 }
 .OurSpeakersCarItem{
 width:100%;
